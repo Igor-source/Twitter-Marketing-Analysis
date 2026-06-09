@@ -105,3 +105,17 @@ The following machine learning algorithms were evaluated:
 **Conclusion**
 
 Tree-based models (Random Forest, CatBoost, and XGBoost) significantly outperformed Logistic Regression, indicating the presence of non-linear relationships between user behavior and productivity. Random Forest and CatBoost achieved the highest accuracy (≈47.5%), while XGBoost obtained the highest Precision and F1-Score, providing the best overall balance between classification metrics. Logistic Regression demonstrated substantially lower performance, suggesting that the problem cannot be effectively solved using a simple linear decision boundary.
+
+<img width="1911" height="1086" alt="Social_media_1" src="https://github.com/user-attachments/assets/69d1c206-b4b1-46e7-a0af-12627e29c52d" />
+Графики выполненные в приложении Power BI позволяют шире и наглядней представить зависиомсти между признаками в сравнении с Exploratory data analysis. 
+Основные выводы которые можно сделать глядя на Dashboard
+1. Сколько человек представлено в категории мужчин и женщин, а также тех кто не указал признак
+2. Распределение средней продуктивности по гендерному признаку - особых различий нет.
+3. job_satisfaction_score имеет наибольшее влияние на признак actual_productivity_score, в связи с чем можно видеть линейную зависимость на соотвесттвующем графике
+   Далее идет разделение сведений по job_type и social_platform_preference
+Job_type
+1. Показатели удовлетворенности работой явной зависимости от количества рабочих часов в день не показали.
+2. Продуктивность от времени в соц сетях показала хаотичную зависимость. Не всегда больше времени в соц сети означает меньшую продуктивность и ногда даже наоборот. По типу занятости видимых изменений нет
+3. Выгорание от стресса не показало прямой зависимости
+4. Производительность от числа перерывов в день также не зависит
+5. 
