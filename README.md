@@ -106,16 +106,32 @@ The following machine learning algorithms were evaluated:
 
 Tree-based models (Random Forest, CatBoost, and XGBoost) significantly outperformed Logistic Regression, indicating the presence of non-linear relationships between user behavior and productivity. Random Forest and CatBoost achieved the highest accuracy (≈47.5%), while XGBoost obtained the highest Precision and F1-Score, providing the best overall balance between classification metrics. Logistic Regression demonstrated substantially lower performance, suggesting that the problem cannot be effectively solved using a simple linear decision boundary.
 
-<img width="1911" height="1086" alt="Social_media_1" src="https://github.com/user-attachments/assets/69d1c206-b4b1-46e7-a0af-12627e29c52d" />
-Графики выполненные в приложении Power BI позволяют шире и наглядней представить зависиомсти между признаками в сравнении с Exploratory data analysis. 
-Основные выводы которые можно сделать глядя на Dashboard
-1. Сколько человек представлено в категории мужчин и женщин, а также тех кто не указал признак
-2. Распределение средней продуктивности по гендерному признаку - особых различий нет.
-3. job_satisfaction_score имеет наибольшее влияние на признак actual_productivity_score, в связи с чем можно видеть линейную зависимость на соотвесттвующем графике
-   Далее идет разделение сведений по job_type и social_platform_preference
-Job_type
-1. Показатели удовлетворенности работой явной зависимости от количества рабочих часов в день не показали.
-2. Продуктивность от времени в соц сетях показала хаотичную зависимость. Не всегда больше времени в соц сети означает меньшую продуктивность и ногда даже наоборот. По типу занятости видимых изменений нет
-3. Выгорание от стресса не показало прямой зависимости
-4. Производительность от числа перерывов в день также не зависит
-5. 
+<img width="1911" height="1086" alt="Social_media_1 (1)" src="https://github.com/user-attachments/assets/06c23443-3899-4846-b8e9-0b268e518f0e" />
+
+## Power BI Dashboard Analysis
+
+The Power BI dashboard provides a more comprehensive and interactive view of the relationships between variables than the exploratory data analysis performed in Python. It enables deeper investigation of behavioral patterns, productivity indicators, and demographic characteristics.
+
+### General Insights
+
+1. The dashboard displays the distribution of users across gender categories, including male, female, and unspecified groups.
+2. Average productivity scores are similar across gender groups, indicating no substantial gender-related differences in productivity.
+3. Job satisfaction demonstrates the strongest relationship with actual productivity. A clear positive linear trend can be observed between `job_satisfaction_score` and `actual_productivity_score`.
+
+### Analysis by Job Type
+
+1. No clear relationship was observed between job satisfaction and the number of working hours per day.
+2. Social media usage time showed a weak and inconsistent relationship with productivity. Higher social media usage does not necessarily correspond to lower productivity, and in some cases the opposite pattern can be observed.
+3. Stress level did not demonstrate a strong direct relationship with burnout indicators.
+4. The number of work breaks showed little to no influence on productivity levels.
+
+### Analysis by Preferred Social Media Platform
+
+1. TikTok users exhibited the highest average productivity scores among the analyzed platforms.
+2. The distribution of preferred social media platforms varies across employment sectors. For example, users working in Healthcare more frequently prefer TikTok, while users in Education more often prefer Facebook.
+3. The scatter plot comparing productivity across platforms, with bubble size representing burnout days, revealed no substantial differences in burnout levels between platform groups.
+4. The use of digital wellbeing or focus-control applications showed no noticeable impact on productivity within the scope of this dataset.
+
+### Overall Conclusion
+
+The dashboard analysis suggests that job satisfaction is the most influential factor associated with productivity. In contrast, social media usage patterns, work breaks, and digital wellbeing tools demonstrated relatively weak relationships with productivity outcomes. These findings indicate that workplace satisfaction may play a more significant role in productivity than digital behavior alone.
