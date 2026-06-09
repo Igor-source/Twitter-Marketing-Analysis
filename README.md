@@ -1,6 +1,6 @@
 # Twitter-Marketing-Analysis
 
-Эта работа выполнена с целью продемонстрировать процесс подготовки данных к обучению моделей машинного обучения. 
+This work is intended to demonstrate the process of preparing data for training machine learning models.
 
 ## Project Overview
 
