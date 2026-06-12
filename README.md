@@ -1,4 +1,4 @@
-# Twitter-Marketing-Analysis
+# Social-Media-Analysis
 
 This work is intended to demonstrate the process of preparing data for training machine learning models.
 
